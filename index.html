@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>A to Z Jucies</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    A<span style="font-size: 20px;">2</span>Z <span>JUICES</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" id="contact-link">Contact</a>
+                        </li>
+                        
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+
+                    <img src="assets/img/nav-img.png" alt="nav image" class="nav__img">
+                </div>
+
+                <!-- Toggle button -->
+                 <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                 </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="home__shape-small"></div>
+                <div class="home__shape-big"></div>
+                <img src="assets/img/shape-bg.png" alt="" class="home__shape-bg">
+
+                <div class="home__container container">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Get Fresh
+                            <span>Juices & iceCreams</span>
+                            Everyday
+                        </h1>
+                        <p class="home__description">
+                            "Starting at 30 OMR, Sip <br>
+                            the freshness, taste the vitality!"
+                        </p>
+                        <a href="#" class="home__button">
+                            Details
+                        </a>
+                    </div>
+
+                    <div class="home__images">
+                        <img src="assets/img/liquid-fruit.png" alt="liquid image" class="home__liquid">
+
+                        <div class="home__juice-animate">
+                            <img src="assets/img/juice.png" alt="juice image" class="home__juice">
+                        </div>
+
+                        <img src="assets/img/apple1.png" alt="apple image" class="home__apple1">
+                        <img src="assets/img/apple2.png" alt="apple image" class="home__apple2">
+
+                        <div>
+                            <img src="assets/img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="assets/img/leaf.png" alt="leaf image" class="home__leaf">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- About Modal (Initially Hidden) -->
+<div id="about-modal" class="modal about-modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <div class="modal-text">
+            <h2>About Us</h2>
+            <p>We offer a variety of fresh juices and ice creams made from the finest ingredients.</p>
+            <p>Our mission is to provide you with the most refreshing and healthy drinks every day.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Modal (Initially Hidden) -->
+<div id="contact-modal" class="modal contact-modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-contact-modal">&times;</span>
+        <div class="modal-text">
+            <img src="assets/img/owner.png" alt="Owner Photo" class="owner-photo">
+            <h2>Muhammed Rafi</h2>
+            <p>Contact: +968 78163806</p>
+            <p>WhatsApp Number: +968 78163806</p>
+            <p>Shop Address: OMAN, Muscat</p>
+            
+            <!-- Google Map Embed -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.3545283641145!2d58.53880257424836!3d23.586294084859295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e9d1b8b20003a0d%3A0x522b26da7d7d7288!2sOman%20Al%20Jabri!5e0!3m2!1sen!2sus!4v1601313154564!5m2!1sen!2sus"
+                    width="100%" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </main>
+
+        <!--=============== GSAP ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
